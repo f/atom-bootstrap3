@@ -1,6 +1,6 @@
 {
   "name": "atom-bootstrap3",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Twitter Bootstrap 3 Snippets",
   "activationEvents": [
     "atom-bootstrap3:toggle"
