@@ -22,11 +22,19 @@ Provides [Twitter Bootstrap 3][1] classes and HTML tags.
 ## Typograpgy
 
 - `bslead`: Lead class `<p class="lead">`
+- `bsh1`: Heading 1 `<h1>Text {<small>optional</small>}</h1>`
+- `bsh2`: Heading 2 `<h2>Text {<small>optional</small>}</h2>`
+- `bsh3`: Heading 3 `<h3>Text {<small>optional</small>}</h3>`
+- `bsh4`: Heading 4 `<h4>Text {<small>optional</small>}</h4>`
+- `bsh5`: Heading 5 `<h5>Text {<small>optional</small>}</h5>`
+- `bsh6`: Heading 6 `<h6>Text {<small>optional</small>}</h6>`
 
 ### Notes
-More to come :)
+- Snippet funcionality has [some bugs][2], I hope it will be fixed by Atom team.
+- More to come :)
 
 ### Demo
 ![Thats how it works!](https://dl.dropboxusercontent.com/u/490540/Images/atom-bs.gif)
 
 [1]: http://getbootstrap.com/
+[2]: https://github.com/atom/snippets/issues/15
