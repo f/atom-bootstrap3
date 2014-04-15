@@ -1,14 +1,15 @@
 {
   "name": "atom-bootstrap3",
   "main": "./lib/atom-bootstrap3",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Twitter Bootstrap 3 Snippets",
-  "activationEvents": ["atom-bootstrap3:toggle"],
+  "activationEvents": [
+    "atom-bootstrap3:toggle"
+  ],
   "repository": "https://github.com/webBoxio/atom-bootstrap3",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
