@@ -5,6 +5,7 @@ Provides [Twitter Bootstrap 3][1] classes and HTML tags.
 ## Grid
 
 - `bscon`: Container `<div class="container">`
+- `bsconf`: Container Fluid `<div class="container-fluid">`
 - `bsrow`: Row. `<div class="row">`
 - `bscolxs`: Column Extra Small `<div class="col-xs-">`
 - `bscolsm`: Column Small `<div class="col-sm-">`
