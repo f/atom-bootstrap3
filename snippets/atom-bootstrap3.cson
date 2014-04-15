@@ -1,0 +1,55 @@
+'.text.html':
+  'Container Div':
+    'prefix': 'con'
+    'body': """
+    <div class="container">
+      $1
+    </div>
+    """
+  'Row':
+    'prefix': 'row'
+    'body': """
+    <div class="row">
+      $1
+    </div>
+    """
+  'Column eXtra Small':
+    'prefix': 'colxs'
+    'body': """
+    <div class="col-xs-${1:1-12}">
+      $0
+    </div>
+    """
+  'Column Small':
+    'prefix': 'colsm'
+    'body': """
+    <div class="col-sm-${1:1-12}">
+      $0
+    </div>
+    """
+  'Column Medium':
+    'prefix': 'colmd'
+    'body': """
+    <div class="col-md-${1:1-12}">
+      $0
+    </div>
+    """
+  'Column Large':
+    'prefix': 'collg'
+    'body': """
+    <div class="col-lg-${1:1-12}">
+      $0
+    </div>
+    """
+  'Column / Cell eXtra Small':
+    'prefix': 'celxs'
+    'body': 'col-xs-${1:1-12}'
+  'Column / Cell Small':
+    'prefix': 'celsm'
+    'body': 'col-sm-${1:1-12}'
+  'Column / Cell Medium':
+    'prefix': 'celmd'
+    'body': 'col-md-${1:1-12}'
+  'Column / Cell Large':
+    'prefix': 'cellg'
+    'body': 'col-lg-${1:1-12}'
