@@ -1,6 +1,5 @@
 {
   "name": "atom-bootstrap3",
-  "main": "./lib/atom-bootstrap3",
   "version": "0.2.0",
   "description": "Twitter Bootstrap 3 Snippets",
   "activationEvents": [

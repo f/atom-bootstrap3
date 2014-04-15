@@ -1,35 +1,32 @@
 # Twitter Bootstrap 3 snippets for Atom
 
-## Keys
+Provides [Twitter Bootstrap 3][1] classes and HTML tags.
 
-`bscon`:
+## Grid
 
-`bsrow`:
+- `bscon`: Container `<div class="container">`
+- `bsrow`: Row. `<div class="row">`
+- `bscolxs`: Column Extra Small `<div class="col-xs-">`
+- `bscolsm`: Column Small `<div class="col-sm-">`
+- `bscolmd`: Column Medium `<div class="col-md-">`
+- `bscollg`: Column Large `<div class="col-lg-">`
+- `bscelxs`: Just column, Extra Small `col-xs-` 
+- `bscelsm`: Just column, Small `col-sm-` 
+- `bscelmd`: Just column, Medium `col-md-` 
+- `bscellg`: Just column, Large `col-lg-` 
+- `bsoffxs`: Offset for Extra Small `col-xs-offset-`
+- `bsoffsm`: Offset for Small `col-sm-offset-`
+- `bsoffmd`: Offset for Medium `col-md-offset-`
+- `bsofflg`: Offset for Large `col-lg-offset-`
 
-`bscolxs`:
+## Typograpgy
 
-`bscolsm`:
+- `bslead`: Lead class `<p class="lead">`
 
-`bscolmd`:
+### Notes
+More to come :)
 
-`bscollg`:
-
-`bscelxs`:
-
-`bscelsm`:
-
-`bscelmd`:
-
-`bscellg`:
-
-`bsoffxs`:
-
-`bsoffsm`:
-
-`bsoffmd`:
-
-`bsofflg`:
-
-`bslead`:
-
+### Demo
 ![Thats how it works!](https://dl.dropboxusercontent.com/u/490540/Images/atom-bs.gif)
+
+[1]: http://getbootstrap.com/
