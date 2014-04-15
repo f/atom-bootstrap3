@@ -1,5 +1,35 @@
-# atom-bootstrap3 package
+# Twitter Bootstrap 3 snippets for Atom
 
-Twitter Bootstrap 3 snippets for Atom
+## Keys
 
-![A screenshot of your spankin' package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+`bscon`:
+
+`bsrow`:
+
+`bscolxs`:
+
+`bscolsm`:
+
+`bscolmd`:
+
+`bscollg`:
+
+`bscelxs`:
+
+`bscelsm`:
+
+`bscelmd`:
+
+`bscellg`:
+
+`bsoffxs`:
+
+`bsoffsm`:
+
+`bsoffmd`:
+
+`bsofflg`:
+
+`bslead`:
+
+![Thats how it works!](https://dl.dropboxusercontent.com/u/490540/Images/atom-bs.gif)
