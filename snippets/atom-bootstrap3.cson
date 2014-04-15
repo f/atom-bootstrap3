@@ -53,3 +53,15 @@
   'Column / Cell Large':
     'prefix': 'cellg'
     'body': 'col-lg-${1:1-12}'
+  'Column / Cell Offset eXtra Small':
+    'prefix': 'offxs'
+    'body': 'col-xs-offset-${1:1-12}'
+  'Column / Cell Offset Small':
+    'prefix': 'offsm'
+    'body': 'col-sm-offset-${1:1-12}'
+  'Column / Cell Offset Medium':
+    'prefix': 'offsm'
+    'body': 'col-md-offset-${1:1-12}'
+  'Column / Cell Offset large':
+    'prefix': 'offlg'
+    'body': 'col-lg-offset-${1:1-12}'
