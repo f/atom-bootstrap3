@@ -1,67 +1,70 @@
 '.text.html':
   'Container Div':
-    'prefix': 'con'
+    'prefix': 'bscon'
     'body': """
     <div class="container">
       $1
     </div>
     """
   'Row':
-    'prefix': 'row'
+    'prefix': 'bsrow'
     'body': """
     <div class="row">
       $1
     </div>
     """
   'Column eXtra Small':
-    'prefix': 'colxs'
+    'prefix': 'bscolxs'
     'body': """
     <div class="col-xs-${1:1-12}">
       $0
     </div>
     """
   'Column Small':
-    'prefix': 'colsm'
+    'prefix': 'bscolsm'
     'body': """
     <div class="col-sm-${1:1-12}">
       $0
     </div>
     """
   'Column Medium':
-    'prefix': 'colmd'
+    'prefix': 'bscolmd'
     'body': """
     <div class="col-md-${1:1-12}">
       $0
     </div>
     """
   'Column Large':
-    'prefix': 'collg'
+    'prefix': 'bscollg'
     'body': """
     <div class="col-lg-${1:1-12}">
       $0
     </div>
     """
   'Column / Cell eXtra Small':
-    'prefix': 'celxs'
+    'prefix': 'bscelxs'
     'body': 'col-xs-${1:1-12}'
   'Column / Cell Small':
-    'prefix': 'celsm'
+    'prefix': 'bscelsm'
     'body': 'col-sm-${1:1-12}'
   'Column / Cell Medium':
-    'prefix': 'celmd'
+    'prefix': 'bscelmd'
     'body': 'col-md-${1:1-12}'
   'Column / Cell Large':
-    'prefix': 'cellg'
+    'prefix': 'bscellg'
     'body': 'col-lg-${1:1-12}'
   'Column / Cell Offset eXtra Small':
-    'prefix': 'offxs'
+    'prefix': 'bsoffxs'
     'body': 'col-xs-offset-${1:1-12}'
   'Column / Cell Offset Small':
-    'prefix': 'offsm'
+    'prefix': 'bsoffsm'
     'body': 'col-sm-offset-${1:1-12}'
   'Column / Cell Offset Medium':
-    'prefix': 'offsm'
+    'prefix': 'bsoffmd'
     'body': 'col-md-offset-${1:1-12}'
   'Column / Cell Offset large':
-    'prefix': 'offlg'
+    'prefix': 'bsofflg'
     'body': 'col-lg-offset-${1:1-12}'
+  'Lead':
+    'prefix': 'bslead'
+    'body': '<p class="lead">$0</p>'
