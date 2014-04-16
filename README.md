@@ -76,7 +76,7 @@ The plugin has Glyphicon and Fontawesome support.
   - `nav-tabs`
   - `nav-`
   - `navbar`: Generates standard navbar template
-  - `navbar-drop`: Generates navbar dropdown item 
+  - `navbar-drop`: Generates navbar dropdown item
 
 ### Other Components
 
@@ -93,8 +93,13 @@ The plugin has Glyphicon and Fontawesome support.
 ## JavaScript Components
 
   - `modal`: Generates modal HTML
+  - `btn-modal`: Generates modal trigger button HTML
   - `accordion`: Generates accordion HTML
+  - `accordion-item`: Generates accordion item HTML
   - `carousel`: Generates carousel HTML
+  - `carousel`: Generates carousel item HTML
+  - `navbar`: Generates navbar HTML
+  - `navbar-dropdown`: Generates navbar dropdown item
 
 ## Grid
 
