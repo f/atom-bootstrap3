@@ -59,3 +59,159 @@
       </body>
     </html>
     """
+
+  'Modal':
+    'prefix': 'modal'
+    'body': """
+    <div class="modal fade" id="$1" tabindex="-1" role="dialog" aria-labelledby="$2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          ${3:<div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="$4">$5</h4>
+          </div>}
+          <div class="modal-body">
+            $6
+          </div>
+          ${7:<div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">${8:Close}</button>
+            <button type="button" class="btn btn-primary">$9</button>
+          </div>}
+        </div>
+      </div>
+    </div>
+    """
+
+  'Accordion':
+    'prefix': 'accordion'
+    'body': """
+    <div class="panel-group" id="$1">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#$2" href="#$3">
+              $4
+            </a>
+          </h4>
+        </div>
+        <div id="$5" class="panel-collapse collapse in">
+          <div class="panel-body">
+            $6
+          </div>
+        </div>
+      </div>
+    </div>
+    """
+
+  'Accordion Item':
+    'prefix': 'accordion-item'
+    'body': """
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#$1" href="#$2">
+            $3
+          </a>
+        </h4>
+      </div>
+      <div id="$4" class="panel-collapse collapse in">
+        <div class="panel-body">
+          $5
+        </div>
+      </div>
+      $6
+    </div>
+    """
+
+  'Carousel':
+    'prefix': 'carousel'
+    'body': """
+    <div id="${1:carousel-example-generic}" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#${2:carousel-example-generic}" data-slide-to="0" class="active"></li>
+        <li data-target="#${3:carousel-example-generic}" data-slide-to="1"></li>
+        <li data-target="#${4:carousel-example-generic}" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="$7" alt="$8">
+          <div class="carousel-caption">
+            $9
+          </div>
+        </div>
+        $10
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#${5:carousel-example-generic}" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#${6:carousel-example-generic}" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    """
+
+  'Carousel Item':
+    'prefix': 'carousel-item'
+    'body': """
+    <div class="item active">
+      <img src="$1" alt="$2">
+      <div class="carousel-caption">
+        <h3>$3</h3>
+        <p>$4</p>
+      </div>
+    </div>
+    """
+
+  'Navbar':
+    'prefix': 'navbar'
+    'body': """
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#${1:navbar}">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">$3</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="${2:navbar}">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">$4</a></li>
+
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">$5</a></li>
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    """
+
+  'Navbar Dropdown':
+    'prefix': 'navbar-dropdown'
+    'body': """
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">${1:Menu Item} <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">$2</a></li>
+        <li class="divider"></li>
+      </ul>
+    </li>
+    """

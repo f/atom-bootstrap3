@@ -1,12 +1,12 @@
-# Twitter Bootstrap 3 snippets for Atom
+# Twitter Bootstrap 3 Support for Atom
 
 Provides [Twitter Bootstrap 3][1] classes and HTML tags with autocompletion features.
 
 Key Features:
 
-  - Supports autocompletion of all helper classes in CSS and HTML
+  - Supports autocompletion of all helper classes in JavaScript, CSS and HTML
   - Snippet support for all components.
-  - Autocompletion for Glyphicons and Fontawesome
+  - Autocompletion for **Glyphicons** and **Fontawesome**
 
 ## Templates
 
@@ -45,6 +45,7 @@ The plugin has Glyphicon and Fontawesome support.
   - `btn-group`
   - `btn-group-vertical`
   - `btn-toolbar`
+  - `btn-modal`
 
 ### Menus and Dropdowns
 
@@ -73,7 +74,9 @@ The plugin has Glyphicon and Fontawesome support.
 
   - `nav-pills`
   - `nav-tabs`
-  - `navbar`
+  - `nav-`
+  - `navbar`: Generates standard navbar template
+  - `navbar-drop`: Generates navbar dropdown item 
 
 ### Other Components
 
@@ -86,6 +89,12 @@ The plugin has Glyphicon and Fontawesome support.
   - `thumbnail`
   - `well`
   - `jumbotron`
+
+## JavaScript Components
+
+  - `modal`: Generates modal HTML
+  - `accordion`: Generates accordion HTML
+  - `carousel`: Generates carousel HTML
 
 ## Grid
 

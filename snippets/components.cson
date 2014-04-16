@@ -20,6 +20,14 @@
     </button>
     """
 
+  'Button Modal':
+    'prefix': 'btn-modal'
+    'body': """
+    <button class="btn ${1:btn-primary}" data-toggle="modal" data-target="#$2">
+      $3
+    </button>
+    """
+
   'Dropdown':
     'prefix': 'dropdown'
     'body': """
@@ -109,7 +117,7 @@
     """
 
   'Navbar':
-    'prefix': 'navbar'
+    'prefix': 'nav-'
     'body': """
     <nav class="navbar navbar-default${1: navbar-fixed-top}" role="navigation">
       <div class="container">
