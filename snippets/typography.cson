@@ -1,0 +1,33 @@
+'.text.html':
+
+  'Initialism':
+    'prefix': 'initialism'
+    'body': '<abbr title="$1" class="initialism">$2</abbr>'
+
+  'Lead':
+    'prefix': 'lead'
+    'body': '<p class="lead">$0</p>'
+
+  'Heading 1':
+    'prefix': 'h1-'
+    'body': '<h1>$1 ${2:<small>$3</small>}</h1>'
+
+  'Heading 2':
+    'prefix': 'h2-'
+    'body': '<h2>$1 ${2:<small>$3</small>}</h2>'
+
+  'Heading 3':
+    'prefix': 'h3-'
+    'body': '<h3>$1 ${2:<small>$3</small>}</h3>'
+
+  'Heading 4':
+    'prefix': 'h4-'
+    'body': '<h4>$1 ${2:<small>$3</small>}</h4>'
+
+  'Heading 5':
+    'prefix': 'h5-'
+    'body': '<h5>$1 ${2:<small>$3</small>}</h5>'
+
+  'Heading 6':
+    'prefix': 'h6-'
+    'body': '<h6>$1 ${2:<small>$3</small>}</h6>'
