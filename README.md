@@ -129,8 +129,5 @@ The plugin has Glyphicon and Fontawesome support.
 - Snippet funcionality has [some bugs][2], I hope it will be fixed by Atom team.
 - More to come :)
 
-### Demo
-![Thats how it works!](https://dl.dropboxusercontent.com/u/490540/Images/atom-bs.gif)
-
 [1]: http://getbootstrap.com/
 [2]: https://github.com/atom/snippets/issues/15
