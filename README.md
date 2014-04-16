@@ -6,6 +6,7 @@ Key Features:
 
   - Supports autocompletion of all helper classes in CSS and HTML
   - Snippet support for all components.
+  - Autocompletion for Glyphicons and Fontawesome
 
 ## Templates
 
@@ -80,7 +81,7 @@ The plugin has Glyphicon and Fontawesome support.
   - `page-header`
   - `pagination`
   - `panel`
-  - `progress`
+  - `progress-`
   - `table-`
   - `thumbnail`
   - `well`
