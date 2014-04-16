@@ -1,4 +1,4 @@
-'.text.html, .css':
+'.text.html, .text.css':
   'editor':
     'completions': [
       'fa-lg'
