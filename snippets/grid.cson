@@ -33,7 +33,7 @@
     """
 
   'Column Extra Small':
-    'prefix': 'colxs'
+    'prefix': 'col-xs'
     'body': """
     <div class="col-xs-${1:1-12}">
       $0
@@ -41,7 +41,7 @@
     """
 
   'Column Small':
-    'prefix': 'colsm'
+    'prefix': 'col-sm'
     'body': """
     <div class="col-sm-${1:1-12}">
       $0
@@ -49,7 +49,7 @@
     """
 
   'Column Medium':
-    'prefix': 'colmd'
+    'prefix': 'col-md'
     'body': """
     <div class="col-md-${1:1-12}">
       $0
@@ -57,7 +57,7 @@
     """
 
   'Column Large':
-    'prefix': 'collg'
+    'prefix': 'col-lg'
     'body': """
     <div class="col-lg-${1:1-12}">
       $0

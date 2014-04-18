@@ -2,6 +2,11 @@
 
 Provides [Twitter Bootstrap 3][1] classes and HTML tags with autocompletion features.
 
+Install:
+```bash
+apm install atom-bootstrap3
+```
+
 Key Features:
 
   - Supports autocompletion of all helper classes in JavaScript, CSS and HTML
@@ -105,10 +110,10 @@ The plugin has Glyphicon and Fontawesome support.
 
   - `row`: Generates column container: `<div class="row"></div>`
   - `col-`: Generates column: `<div class="col-..."></div>`
-  - `collg`: Generates large column: `<div class="col-lg-..."></div>`
-  - `colmd`: Generates medium column: `<div class="col-md-..."></div>`
-  - `colsm`: Generates small column: `<div class="col-sm-..."></div>`
-  - `colxs`: Generates extra small column: `<div class="col-xs-..."></div>`
+  - `col-lg`: Generates large column: `<div class="col-lg-..."></div>`
+  - `col-md`: Generates medium column: `<div class="col-md-..."></div>`
+  - `col-sm`: Generates small column: `<div class="col-sm-..."></div>`
+  - `col-xs`: Generates extra small column: `<div class="col-xs-..."></div>`
   - `con`: Generates container: `<div class="container"></div>`
   - `conf`: Generates fluid container: `<div class="container-fluid"></div>`
 
