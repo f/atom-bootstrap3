@@ -13,7 +13,7 @@ Key Features:
   - Snippet support for all components.
   - Autocompletion for **Glyphicons** and **Fontawesome**
 
-An example with [Twitter Bootstrap 3 Package][1]
+An example with [HTML Preview][3]
 
 ![Atom HTML Preview with Bootstrap](https://dl.dropboxusercontent.com/u/20947008/webbox/atom/atom-bootstrap-3.gif)
 
@@ -140,3 +140,4 @@ The plugin has Glyphicon and Fontawesome support.
 
 [1]: http://getbootstrap.com/
 [2]: https://github.com/atom/snippets/issues/15
+[3]: http://atom.io/packages/atom-html-preview
