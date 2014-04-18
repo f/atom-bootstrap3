@@ -13,6 +13,10 @@ Key Features:
   - Snippet support for all components.
   - Autocompletion for **Glyphicons** and **Fontawesome**
 
+An example with [Twitter Bootstrap 3 Package][1]
+
+![Atom HTML Preview with Bootstrap](https://dl.dropboxusercontent.com/u/20947008/webbox/atom/atom-bootstrap-3.gif)
+
 ## Templates
 
   - `html-`: Generates Basic HTML Template
