@@ -126,30 +126,30 @@
   'Carousel':
     'prefix': 'carousel'
     'body': """
-    <div id="${1:carousel-example-generic}" class="carousel slide" data-ride="carousel">
+    <div id="${1:carousel-generic}" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#${2:carousel-example-generic}" data-slide-to="0" class="active"></li>
-        <li data-target="#${3:carousel-example-generic}" data-slide-to="1"></li>
-        <li data-target="#${4:carousel-example-generic}" data-slide-to="2"></li>
+        <li data-target="#${1:carousel-generic}" data-slide-to="0" class="active"></li>
+        <li data-target="#${1:carousel-generic}" data-slide-to="1"></li>
+        <li data-target="#${1:carousel-generic}" data-slide-to="2"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="$7" alt="$8">
+          <img src="$2" alt="$3">
           <div class="carousel-caption">
-            $9
+            $4
           </div>
         </div>
-        $10
+        $5
       </div>
 
       <!-- Controls -->
-      <a class="left carousel-control" href="#${5:carousel-example-generic}" data-slide="prev">
+      <a class="left carousel-control" href="#${1:carousel-generic}" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
       </a>
-      <a class="right carousel-control" href="#${6:carousel-example-generic}" data-slide="next">
+      <a class="right carousel-control" href="#${1:carousel-generic}" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
       </a>
     </div>
@@ -179,14 +179,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">$3</a>
+          <a class="navbar-brand" href="#">$2</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="${2:navbar}">
+        <div class="collapse navbar-collapse" id="${1:navbar}">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">$4</a></li>
+            <li><a href="#">$3</a></li>
 
           </ul>
           <form class="navbar-form navbar-left" role="search">
@@ -196,7 +196,7 @@
             <button type="submit" class="btn btn-default">Submit</button>
           </form>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">$5</a></li>
+            <li><a href="#">$4</a></li>
 
           </ul>
         </div><!-- /.navbar-collapse -->
