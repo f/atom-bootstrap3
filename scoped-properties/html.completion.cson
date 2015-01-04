@@ -5,8 +5,10 @@
       # Snippets
       'html-'
       'html-min'
+      'html-oi'
       'icon'
       'fa'
+      'oi'
       'btn'
       'dropdown'
       'menuitem'
