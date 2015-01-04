@@ -11,7 +11,7 @@ Key Features:
 
   - Supports autocompletion of all helper classes in JavaScript, CSS and HTML
   - Snippet support for all components.
-  - Autocompletion for **Glyphicons** and **Fontawesome**
+  - Autocompletion for **Glyphicons**, **Fontawesome** and **Octicons**
 
 An example with [HTML Preview][3]
 
