@@ -11,7 +11,7 @@ Key Features:
 
   - Supports autocompletion of all helper classes in JavaScript, CSS and HTML
   - Snippet support for all components.
-  - Autocompletion for **Glyphicons** and **Fontawesome**
+  - Autocompletion for **Glyphicons**, **Fontawesome** and **Octicons**
 
 An example with [HTML Preview][3]
 
@@ -21,6 +21,7 @@ An example with [HTML Preview][3]
 
   - `html-`: Generates Basic HTML Template
   - `html-min`: Generates Basic HTML Template without comments
+  - `html-oi`: Generates Basic HTML Template (replace `fontawesome` in favor of `octicons`)
 
 ## Components
 
@@ -32,6 +33,7 @@ The plugin has Glyphicon and Fontawesome support.
 
   - `icon`: Generates glyphicon icon snippet
   - `fa`: Generates fontawesome icon snippet
+  - `oi`: Generates octicon snippet
 
 ### Alert
 
