@@ -123,7 +123,7 @@ The plugin has Glyphicon and Fontawesome support.
   - `con`: Generates container: `<div class="container"></div>`
   - `conf`: Generates fluid container: `<div class="container-fluid"></div>`
 
-## Typograpgy
+## Typography
 
 - `lead`: Lead class `<p class="lead">`
 - `h1-`: Heading 1 `<h1>Text {<small>optional</small>}</h1>`
