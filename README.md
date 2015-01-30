@@ -1,6 +1,6 @@
-# Twitter Bootstrap 3 Support for Atom
+# Bootstrap 3 Support for Atom
 
-Provides [Twitter Bootstrap 3][1] classes and HTML tags with autocompletion features.
+Provides [Bootstrap 3][1] classes and HTML tags with autocompletion features.
 
 Install:
 ```bash

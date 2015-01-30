@@ -1,7 +1,7 @@
 {
   "name": "atom-bootstrap3",
   "version": "1.2.0",
-  "description": "Twitter Bootstrap 3 Support with snippets and autocompletion. Supports Glyphicons and Fontawesome",
+  "description": "Bootstrap 3 Support with snippets and autocompletion. Supports Glyphicons and Fontawesome",
   "activationEvents": [
     "atom-bootstrap3:toggle"
   ],
