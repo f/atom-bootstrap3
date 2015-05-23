@@ -11,7 +11,7 @@
         <title>$1</title>
 
         <!-- Bootstrap -->
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,7 +27,7 @@
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
       </body>
     </html>
     """
@@ -43,7 +43,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>$1</title>
 
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
         <!--[if lt IE 9]>
@@ -55,7 +55,7 @@
         $2
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
       </body>
     </html>
     """
@@ -71,7 +71,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>$1</title>
 
-        <link href="https://cdn.jsdelivr.net/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/octicons/2.1.2/octicons.css" rel="stylesheet">
 
         <!--[if lt IE 9]>
@@ -83,7 +83,7 @@
         $0
 
         <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bootstrap/3.3.4/js/bootstrap.min.js"></script>
       </body>
     </html>
     """
