@@ -229,7 +229,7 @@
 
       'badge'
       'list-group-item'
-      'alert-dismissable'
+      'alert-dismissible'
       'alert-success'
       'alert-info'
       'alert-warning'
