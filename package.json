@@ -1,14 +1,37 @@
 {
-  "name": "atom-bootstrap3",
+  "name": "bootstrap",
   "version": "1.2.11",
   "description": "Bootstrap 3 Support with snippets and autocompletion. Supports Glyphicons and Fontawesome",
   "activationCommands": {
-    "atom-bootstrap3": "toggle"
+    "bootstrap": "toggle"
   },
-  "repository": "https://github.com/f/atom-bootstrap3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f/atom-bootstrap3.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "readme": "# Bootstrap 3 Support for Atom\n\nProvides [Bootstrap 3][1] classes and HTML tags with autocompletion features.\n\nInstall:\n```bash\napm install atom-bootstrap3\n```\n\nKey Features:\n\n  - Supports autocompletion of all helper classes in JavaScript, CSS and HTML\n  - Snippet support for all components.\n  - Autocompletion for **Glyphicons**, **Fontawesome** and **Octicons**\n\nAn example with [HTML Preview][3]\n\n![Atom HTML Preview with Bootstrap](https://dl.dropboxusercontent.com/u/20947008/webbox/atom/atom-bootstrap-3.gif)\n\n## Templates\n\n  - `html-`: Generates Basic HTML Template\n  - `html-min`: Generates Basic HTML Template without comments\n  - `html-oi`: Generates Basic HTML Template (replace `fontawesome` in favor of `octicons`)\n\n## Components\n\nAll components also have autocompletion support for extra options.\n\n### Icons\n\nThe plugin has Glyphicon and Fontawesome support.\n\n  - `icon`: Generates glyphicon icon snippet\n  - `fa`: Generates fontawesome icon snippet\n  - `oi`: Generates octicon snippet\n\n### Alert\n\n  - `alert`\n  - `alert-link`\n  - `close`\n\n### Badge\n\n  - `badge`\n\n### Breadcrumb\n\n  - `breadcrumb`\n  - `item`\n\n### Buttons\n\n  - `btn`\n  - `btn-group`\n  - `btn-group-vertical`\n  - `btn-toolbar`\n  - `btn-modal`\n\n### Menus and Dropdowns\n\n  - `dropdown`\n  - `menudivider`\n  - `menuheader`\n  - `menuitem`\n\n### Forms\n\n  - `form-group`\n  - `input-group`\n\n### Labels\n\n  - `label-`\n\n### Lists\n\n  - `list-group`\n  - `list-inline`\n  - `list-item`\n  - `list-unstyled`\n\n### Tabs and Navigations\n\n  - `nav-pills`\n  - `nav-tabs`\n  - `nav-`\n  - `navbar`: Generates standard navbar template\n  - `navbar-drop`: Generates navbar dropdown item\n\n### Other Components\n\n  - `pager`\n  - `page-header`\n  - `pagination`\n  - `panel`\n  - `progress-`\n  - `table-`\n  - `thumbnail`\n  - `well`\n  - `jumbotron`\n\n## JavaScript Components\n\n  - `modal`: Generates modal HTML\n  - `btn-modal`: Generates modal trigger button HTML\n  - `accordion`: Generates accordion HTML\n  - `accordion-item`: Generates accordion item HTML\n  - `carousel`: Generates carousel HTML\n  - `carousel`: Generates carousel item HTML\n  - `navbar`: Generates navbar HTML\n  - `navbar-dropdown`: Generates navbar dropdown item\n\n## Grid\n\n  - `row`: Generates column container: `<div class=\"row\"></div>`\n  - `col-`: Generates column: `<div class=\"col-...\"></div>`\n  - `col-lg`: Generates large column: `<div class=\"col-lg-...\"></div>`\n  - `col-md`: Generates medium column: `<div class=\"col-md-...\"></div>`\n  - `col-sm`: Generates small column: `<div class=\"col-sm-...\"></div>`\n  - `col-xs`: Generates extra small column: `<div class=\"col-xs-...\"></div>`\n  - `con`: Generates container: `<div class=\"container\"></div>`\n  - `conf`: Generates fluid container: `<div class=\"container-fluid\"></div>`\n\n## Typography\n\n- `lead`: Lead class `<p class=\"lead\">`\n- `h1-`: Heading 1 `<h1>Text {<small>optional</small>}</h1>`\n- `h2-`: Heading 2 `<h2>Text {<small>optional</small>}</h2>`\n- `h3-`: Heading 3 `<h3>Text {<small>optional</small>}</h3>`\n- `h4-`: Heading 4 `<h4>Text {<small>optional</small>}</h4>`\n- `h5-`: Heading 5 `<h5>Text {<small>optional</small>}</h5>`\n- `h6-`: Heading 6 `<h6>Text {<small>optional</small>}</h6>`\n- `initialism`: Generates \"initialism\" text\n- `blockquote-reverse`: Generates reverse blockquote\n- `dl-horizontal`\n\n### Notes\n- Snippet funcionality has [some bugs][2], I hope it will be fixed by Atom team.\n- More to come :)\n\n[1]: http://getbootstrap.com/\n[2]: https://github.com/atom/snippets/issues/15\n[3]: http://atom.io/packages/atom-html-preview\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/f/atom-bootstrap3/issues"
+  },
+  "homepage": "https://github.com/f/atom-bootstrap3#readme",
+  "_id": "atom-bootstrap3@1.2.11",
+  "_shasum": "dc10409f567d922da6ba45e0968d2d8359ee4902",
+  "_resolved": "file:../d-11581-9080-9dii1y/package.tgz",
+  "_from": "../d-11581-9080-9dii1y/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
 }
