@@ -1,6 +1,6 @@
 {
   "name": "atom-bootstrap3",
-  "version": "1.2.11",
+  "version": "1.2.12",
   "description": "Bootstrap 3 Support with snippets and autocompletion. Supports Glyphicons and Fontawesome",
   "activationCommands": {
     "bootstrap": "toggle"
