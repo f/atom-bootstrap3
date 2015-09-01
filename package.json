@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "bootstrap3",
   "version": "1.2.11",
   "description": "Bootstrap 3 Support with snippets and autocompletion. Supports Glyphicons and Fontawesome",
   "activationCommands": {
