@@ -5,7 +5,7 @@
   "activationCommands": {
     "atom-bootstrap3": "toggle"
   },
-  "repository": "https://github.com/webBoxio/atom-bootstrap3",
+  "repository": "https://github.com/f/atom-bootstrap3",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
