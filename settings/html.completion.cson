@@ -66,6 +66,8 @@
       'carousel-item'
       'navbar-dropdown'
       'nav-'
+      'media'
+      'media-list'
 
       # Classes
       'navbar'
