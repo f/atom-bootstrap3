@@ -313,3 +313,37 @@
       ${6:<p class="help-block">${7:Help text here.}</p>}
     </div>
     """
+
+  'Media':
+    'prefix':'media'
+    'body':"""
+    <div class="media">
+      <div class="media-left media-middle">
+        <a href="#">
+          <img class="media-object" src="" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"></h4>
+
+      </div>
+   </div>
+   """
+
+   'Media List':
+     'prefix':'media-list'
+     'body':"""
+     <ul class="media-list">
+       <li class="media">
+         <div class="media-left">
+           <a href="#">
+             <img class="media-object" src="" alt="">
+           </a>
+         </div>
+         <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            
+         </div>
+       </li>
+     </ul>
+     """
