@@ -1,0 +1,65 @@
+'.source.jsx, .source.tsx':
+
+  'Container':
+    'prefix': 'con'
+    'body': """
+    <div className="container">
+      $1
+    </div>
+    """
+
+  'Container Fluid':
+    'prefix': 'conf'
+    'body': """
+    <div className="container-fluid">
+      $1
+    </div>
+    """
+
+  'Row':
+    'prefix': 'row'
+    'body': """
+    <div className="row">
+      $1
+    </div>
+    """
+
+  'Column':
+    'prefix': 'col-'
+    'body': """
+    <div className="col-${1:xs|sm|md|lg}-${2:1-12}">
+      $3
+    </div>
+    """
+
+  'Column Extra Small':
+    'prefix': 'col-xs'
+    'body': """
+    <div className="col-xs-${1:1-12}">
+      $0
+    </div>
+    """
+
+  'Column Small':
+    'prefix': 'col-sm'
+    'body': """
+    <div className="col-sm-${1:1-12}">
+      $0
+    </div>
+    """
+
+  'Column Medium':
+    'prefix': 'col-md'
+    'body': """
+    <div className="col-md-${1:1-12}">
+      $0
+    </div>
+    """
+
+  'Column Large':
+    'prefix': 'col-lg'
+    'body': """
+    <div className="col-lg-${1:1-12}">
+      $0
+    </div>
+    """
