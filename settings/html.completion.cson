@@ -1,4 +1,4 @@
-'.text.html, .text.css, .source.scss, .source.sass, .source.js, .source.jsx, .source.jsx, .source.tsx':
+'.text.html, .text.css, .source.scss, .source.sass, .source.js, .source.jsx, .source.ts, .source.tsx':
   'editor':
     'completions': [
 
