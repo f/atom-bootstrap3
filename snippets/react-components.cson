@@ -1,0 +1,315 @@
+'.source.jsx, .source.tsx':
+
+  'Icon':
+    'prefix': 'icon'
+    'body': """
+    <span className="glyphicon glyphicon-$1"></span>
+    """
+
+  'Octicons by GitHub':
+    'prefix': 'oi'
+    'body': """
+    <span className="${1:mega-}octicon octicon-$2"></span>$0
+    """
+
+  'Fontawesome Icon':
+    'prefix': 'fa'
+    'body': """
+    <i className="fa fa-$1"></i>
+    """
+
+  'Button':
+    'prefix': 'btn'
+    'body': """
+    <button type="button" className="btn${1: btn-default}">
+      $2
+    </button>
+    """
+
+  'Button Modal':
+    'prefix': 'btn-modal'
+    'body': """
+    <button className="btn ${1:btn-primary}" data-toggle="modal" data-target="#$2">
+      $3
+    </button>
+    """
+
+  'Dropdown':
+    'prefix': 'dropdown'
+    'body': """
+    <div className="dropdown">
+      <button className="btn dropdown-toggle sr-only" type="button" id="$1" data-toggle="dropdown">
+        $2
+        <span className="caret"></span>
+      </button>
+      <ul className="dropdown-menu" role="menu" aria-labelledby="$3">
+        $4
+      </ul>
+    </div>
+    """
+
+  'Menu Item':
+    'prefix': 'menuitem'
+    'body': """
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="${1:#}">$2</a></li>
+    """
+
+  'Menu Header':
+    'prefix': 'menuheader'
+    'body': """
+    <li role="presentation" className="dropdown-header">$1</li>
+    """
+
+  'Menu Divider':
+    'prefix': 'menudivider'
+    'body': """
+    <li role="presentation" className="divider"></li>
+    """
+
+  'Button Group':
+    'prefix': 'btn-group'
+    'body': """
+    <div className="btn-group${1: btn-group-${2:sm}}">
+      ${3:btn}
+    </div>
+    """
+
+  'Button Group Vertical':
+    'prefix': 'btn-group-vertical'
+    'body': """
+    <div className="btn-group-vertical${1: btn-group-${2:sm}}">
+      ${3:btn}
+    </div>
+    """
+
+  'Button Toolbar':
+    'prefix': 'btn-toolbar'
+    'body': """
+    <div className="btn-toolbar" role="toolbar">
+      ${1:btngroup}
+    </div>
+    """
+
+  'Input Group':
+    'prefix': 'input-group'
+    'body': """
+    <div className="input-group">
+      <span className="input-group-addon">$1</span>
+      <input type="text" className="form-control" placeholder="$2">
+      $3
+    </div>
+    """
+
+  'Tab':
+    'prefix': 'nav-tabs'
+    'body': """
+    <ul className="nav nav-tabs">
+      $1
+    </ul>
+    """
+
+  'Item':
+    'prefix': 'item'
+    'body': """
+    <li><a href="${1:#}">$2</a></li>
+    """
+
+  'Pills':
+    'prefix': 'nav-pills'
+    'body': """
+    <ul className="nav nav-pills$1">
+      $2
+    </ul>
+    """
+
+  'Navbar':
+    'prefix': 'nav-'
+    'body': """
+    <nav className="navbar navbar-default${1: navbar-fixed-top}" role="navigation">
+      <div className="container">
+        $2
+      </div>
+    </nav>
+    """
+
+  'Breadcrumbs':
+    'prefix': 'breadcrumb'
+    'body': """
+    <ol className="breadcrumb">
+      $1
+    </ol>
+    """
+
+  'Pagination':
+    'prefix': 'pagination'
+    'body': """
+    <ul className="pagination">
+      <li><a href="#">&laquo;</a></li>
+      $1
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+    """
+
+  "Pager":
+    'prefix': 'pager'
+    'body': """
+    <ul className="pager">
+      $1
+    </ul>
+    """
+
+  'Label':
+    'prefix': 'label-'
+    'body': """
+    <span className="label${1: label-default}">$2</span>
+    """
+
+  'Badge':
+    'prefix': 'badge'
+    'body': """
+    <span className="badge$1">$2</span>
+    """
+
+  'Jumbotron':
+    'prefix': 'jumbotron'
+    'body': """
+    <div className="jumbotron">
+      <h1>${1:Hello, world!}</h1>
+      <p>$2</p>
+    </div>
+    """
+
+  'Page Header':
+    'prefix': 'page-header'
+    'body': """
+    <div className="page-header">
+      <h1>$1 <small>$2</small></h1>
+    </div>
+    """
+
+  'Thumbnail':
+    'prefix': 'thumbnail'
+    'body': """
+    <a href="#" className="thumbnail">
+      ${1:<img src="" alt="$2">}
+    </a>
+    """
+
+  'Alert':
+    'prefix': 'alert'
+    'body': """
+    <div className="alert${1: alert-success}">$2</div>
+    """
+
+  'Alert Close':
+    'prefix': 'close'
+    'body': """
+    <button type="button" className="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    """
+
+  'Alert Link':
+    'prefix': 'alert-link'
+    'body': """
+    <a href="${1:#}" className="alert-link">$2</a>
+    """
+
+  'Progress Bar':
+    'prefix': 'progress-'
+    'body': """
+    <div className="progress">
+      <div className="progress-bar" role="progressbar" aria-valuenow="$1" aria-valuemin="0" aria-valuemax="100" style="width: $2%;">
+        <span className="sr-only">$2</span>
+      </div>
+    </div>
+    """
+
+  'List Group':
+    'prefix': 'list-group'
+    'body': """
+    <ul className="list-group">
+      ${1:<li className="list-group-item">$2</li>}
+    </ul>
+    """
+
+  'List Group Item':
+    'prefix': 'list-item'
+    'body': """
+    <li className="list-group-item">$1</li>
+    """
+
+  'Panel':
+    'prefix': 'panel'
+    'body': """
+    <div className="panel panel-default">
+      ${1:<div className="panel-heading">
+        <h3 className="panel-title">$2</h3>
+      </div>}
+      <div className="panel-body">
+        $3
+      </div>
+      ${4:<div className="panel-footer">
+        $5
+      </div>}
+    </div>
+    """
+
+  'Well':
+    'prefix': 'well'
+    'body': """
+    <div className="well${1: well-sm}">
+      $2
+    </div>
+    """
+
+  'Blockquote Reverse':
+    'prefix': 'blockquote-reverse'
+    'body': """
+    <blockquote className="blockquote-reverse$1">
+      $2
+    </blockquote>
+    """
+
+  'List Unstyled':
+    'prefix': 'list-unstyled'
+    'body': """
+    <ul className="list-unstyled">
+      <li>$1</li>
+      $2
+    </ul>
+    """
+
+  'List Inline':
+    'prefix': 'list-inline'
+    'body': """
+    <ul className="list-inline">
+      <li>$1</li>
+      $2
+    </ul>
+    """
+
+  'Dl Horizontal':
+    'prefix': 'dl-horizontal'
+    'body': """
+    <dl className="dl-horizontal">
+      ${1:<dt>$2</dt>
+      <dd>$3</dd>}
+    </dl>
+    """
+
+  'Table':
+    'prefix': 'table-'
+    'body': """
+    <table className="table$1">
+      $2
+    </table>
+    """
+
+  'Form Group':
+    'prefix': 'form-group'
+    'body': """
+    <div className="form-group">
+      <label for="$1">$2</label>
+      <input type="${3:text}" className="form-control" id="$4" placeholder="$5">
+      ${6:<p className="help-block">${7:Help text here.}</p>}
+    </div>
+    """
