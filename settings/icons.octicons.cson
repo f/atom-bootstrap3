@@ -1,4 +1,4 @@
-'.text.html, .source.css, .source.sass, .source.less, .source.jade':
+'.text.html, .source.css, .source.sass, .source.less, .source.pug':
   'editor':
     'completions': [
       'octicon-alert'

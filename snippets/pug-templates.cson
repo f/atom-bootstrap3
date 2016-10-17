@@ -1,0 +1,190 @@
+'.source.pug':
+  'Basic HTML Template':
+    'prefix': 'html-'
+    'body': """
+    doctype html
+    html(lang='en')
+      head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title $1
+        // Bootstrap
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+        // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+        // WARNING: Respond.js doesn't work if you view the page via file://
+        //if lt IE 9
+          script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js')
+          script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+      body
+        $2
+        // jQuery (necessary for Bootstrap's JavaScript plugins)
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+        // Include all compiled plugins (below), or include individual files as needed
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    """
+
+  'Minimal HTML Template (No Comment)':
+    'prefix': 'html-min'
+    'body': """
+    doctype html
+    html(lang='en')
+      head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title $1
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+        //if lt IE 9
+          script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js')
+          script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+      body
+        $2
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    """
+
+  'HTML Template (Using Octicons by GitHub)':
+    'prefix': 'html-oi'
+    'body': """
+    doctype html
+    html(lang='en')
+      head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title $1
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css')
+        //if lt IE 9
+          script(src='https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js')
+          script(src='https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js')
+      body
+        $0
+        script(src='https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js')
+        script(src='https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js')
+    """
+
+  'Modal':
+    'prefix': 'modal'
+    'body': """
+    .modal.fade(id='$1', tabindex='-1', role='dialog', aria-labelledby='$2', aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          ${3:
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+            h4.modal-title(id='$4') $5
+          }
+          .modal-body
+            $6
+          ${7:
+          .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') ${8:Close}
+            button.btn.btn-primary(type='button') $9
+          }
+    """
+
+  'Accordion':
+    'prefix': 'accordion'
+    'body': """
+    .panel-group(id='$1')
+      .panel.panel-default
+        .panel-heading
+          h4.panel-title
+            a(data-toggle='collapse', data-parent='#$2', href='#$3')
+              $4
+        .panel-collapse.collapse.in(id='$5')
+          .panel-body
+            $6
+    """
+
+  'Accordion Item':
+    'prefix': 'accordion-item'
+    'body': """
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a(data-toggle='collapse', data-parent='#$1', href='#$2')
+            $3
+      .panel-collapse.collapse.in(id='$4')
+        .panel-body
+          $5
+      $6
+    """
+
+  'Carousel':
+    'prefix': 'carousel'
+    'body': """
+    .carousel.slide(id='${1:carousel-generic}', data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#${1:carousel-generic}', data-slide-to='0')
+        li(data-target='#${1:carousel-generic}', data-slide-to='1')
+        li(data-target='#${1:carousel-generic}', data-slide-to='2')
+      // Wrapper for slides
+      .carousel-inner
+        .item.active
+          img(src='$2', alt='$3')
+          .carousel-caption
+            $4
+        $5
+      // Controls
+      a.left.carousel-control(href='#${1:carousel-generic}', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left
+      a.right.carousel-control(href='#${1:carousel-generic}', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right
+    """
+
+  'Carousel Item':
+    'prefix': 'carousel-item'
+    'body': """
+    .item.active
+      img(src='$1', alt='$2')
+      .carousel-caption
+        h3 $3
+        p $4
+    """
+
+  'Navbar':
+    'prefix': 'navbar'
+    'body': """
+    nav.navbar.navbar-default(role='navigation')
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#${1:navbar}')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') $2
+        // Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse(id='${1:navbar}')
+          ul.nav.navbar-nav
+            li.active
+              a(href='#') Home
+            li
+              a(href='#') $3
+          form.navbar-form.navbar-left(role='search')
+            .form-group
+              input.form-control(type='text', placeholder='Search')
+            button.btn.btn-default(type='submit') Submit
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#') $4
+    """
+
+  'Navbar Dropdown':
+    'prefix': 'navbar-dropdown'
+    'body': """
+    li.dropdown
+      a.dropdown-toggle(href='#', data-toggle='dropdown')
+        ${1:Menu Item} 
+        b.caret
+      ul.dropdown-menu
+        li
+          a(href='#') $2
+        li.divider
+    """
