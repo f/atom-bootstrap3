@@ -1,4 +1,4 @@
-'.text.html, .text.css, .source.js':
+'.text.html, .text.css, .source.js, .text.slim':
   'editor':
     'completions': [
 
