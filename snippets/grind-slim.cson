@@ -1,0 +1,57 @@
+'.text.slim':
+
+  'Container':
+    'prefix': 'con'
+    'body': """
+    .container
+      $1
+    """
+
+  'Container Fluid':
+    'prefix': 'conf'
+    'body': """
+    .container-fluid
+      $1
+    """
+
+  'Row':
+    'prefix': 'row'
+    'body': """
+    .row
+      $1
+    """
+
+  'Column':
+    'prefix': 'col-'
+    'body': """
+    .col-${1:xs|sm|md|lg}-${2:1-12}
+      $3
+    """
+
+  'Column Extra Small':
+    'prefix': 'col-xs'
+    'body': """
+    .col-xs-${1:1-12}
+      $0
+    """
+
+  'Column Small':
+    'prefix': 'col-sm'
+    'body': """
+    .col-sm-${1:1-12}
+      $0
+    """
+
+  'Column Medium':
+    'prefix': 'col-md'
+    'body': """
+    .col-md-${1:1-12}
+      $0
+    """
+
+  'Column Large':
+    'prefix': 'col-lg'
+    'body': """
+    .col-lg-${1:1-12}
+      $0
+    """

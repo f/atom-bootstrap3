@@ -1,0 +1,181 @@
+'.text.slim':
+  'Basic HTML Template':
+    'prefix': 'html-'
+    'body': """
+    doctype html
+    html lang="en"
+      head
+        meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+        meta charset="utf-8" /
+        meta content="IE=edge" http-equiv="X-UA-Compatible" /
+        meta content="width=device-width, initial-scale=1" name="viewport" /
+        title $1
+        /! Bootstrap
+        link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" /
+        link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" /
+      body
+        /! jQuery (necessary for Bootstrap's JavaScript plugins)
+        script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+        /! Include all compiled plugins (below), or include individual files as needed
+        script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    """
+
+  'Minimal HTML Template (No Comment)':
+    'prefix': 'html-min'
+    'body': """
+    doctype html
+    html lang="en"
+      head
+        meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+        meta charset="utf-8" /
+        meta content="IE=edge" http-equiv="X-UA-Compatible" /
+        meta content="width=device-width, initial-scale=1" name="viewport" /
+        title $1
+        link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" /
+        link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" /
+      body
+        $2
+        script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+        script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    """
+
+  'HTML Template (Using Octicons by GitHub)':
+    'prefix': 'html-oi'
+    'body': """
+    doctype html
+    html lang="en"
+      head
+        meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+        meta charset="utf-8" /
+        meta content="IE=edge" http-equiv="X-UA-Compatible" /
+        meta content="width=device-width, initial-scale=1" name="viewport" /
+        title $1
+        link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" /
+        link href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css" rel="stylesheet" /
+      body
+        $0
+        script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"
+        script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"
+    """
+
+  'Modal':
+    'prefix': 'modal'
+    'body': """
+    .modal.fade aria-hidden="true" aria-labelledby="$2" id="$1" role="dialog" tabindex="-1"
+      .modal-dialog
+        .modal-content
+          ${3:
+          .modal-header
+            button.close aria-hidden="true" data-dismiss="modal" type="button"  &times;
+            h4.modal-title id="$4"  $5
+          }
+          .modal-body
+            $6
+          ${7:
+          .modal-footer
+            button.btn.btn-default data-dismiss="modal" type="button" ${8:Close}
+            button.btn.btn-primary type="button"  $9
+          }
+    """
+
+  'Accordion':
+    'prefix': 'accordion'
+    'body': """
+    .panel-group id="$1"
+      .panel.panel-default
+        .panel-heading
+          h4.panel-title
+            a data-parent="#$2" data-toggle="collapse" href="#$3"
+              $4
+        .panel-collapse.collapse.in id="$5"
+          .panel-body
+            $6
+    """
+
+  'Accordion Item':
+    'prefix': 'accordion-item'
+    'body': """
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          a data-parent="#$1" data-toggle="collapse" href="#$2"
+            $3
+      .panel-collapse.collapse.in id="$4"
+        .panel-body
+          $5
+      $6
+    """
+
+  'Carousel':
+    'prefix': 'carousel'
+    'body': """
+    .carousel.slide data-ride="carousel" id="${1:carousel-generic}"
+      /! Indicators
+      ol.carousel-indicators
+        li.active data-slide-to="0" data-target="#${1:carousel-generic}"
+        li data-slide-to="1" data-target="#${1:carousel-generic}"
+        li data-slide-to="2" data-target="#${1:carousel-generic}"
+      /! Wrapper for slides
+      .carousel-inner
+        .item.active
+          img alt="$3" src="$2" /
+          .carousel-caption
+            $4
+        $5
+      /! Controls
+      a.left.carousel-control data-slide="prev" href="#${1:carousel-generic}"
+        span.glyphicon.glyphicon-chevron-left
+      a.right.carousel-control data-slide="next" href="#${1:carousel-generic}"
+        span.glyphicon.glyphicon-chevron-right
+    """
+
+  'Carousel Item':
+    'prefix': 'carousel-item'
+    'body': """
+    .item.active
+      img alt="$2" src="$1" /
+      .carousel-caption
+        h3 $3
+        p $4
+    """
+
+  'Navbar':
+    'prefix': 'navbar'
+    'body': """
+    nav.navbar.navbar-default role="navigation"
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle data-target="\#${1:navbar}" data-toggle="collapse" type="button"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand href="#"  $2
+        /! Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse id="${1:navbar}"
+          ul.nav.navbar-nav
+            li.active
+              a href="#"  Home
+            li
+              a href="#"  $3
+          form.navbar-form.navbar-left role="search"
+            .form-group
+              input.form-control placeholder="Search" type="text" /
+            button.btn.btn-default type="submit"  Submit
+          ul.nav.navbar-nav.navbar-right
+            li
+              a href="#"  $4
+    """
+
+  'Navbar Dropdown':
+    'prefix': 'navbar-dropdown'
+    'body': """
+    li.dropdown
+      a.dropdown-toggle data-toggle="dropdown" href="#"
+        ${1:Menu Item}
+        b.caret
+      ul.dropdown-menu
+        li
+          a href="#"  $2
+        li.divider
+    """

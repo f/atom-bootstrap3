@@ -1,0 +1,301 @@
+".text.slim":
+
+  'Icon':
+    'prefix': 'icon'
+    'body': """
+    .glyphicon.glyphicon-$1
+    """
+
+  'Octicons by GitHub':
+    'prefix': 'oi'
+    'body': """
+    .${1:mega-}octicon.octicon-$2
+    $0
+    """
+
+  'Fontawesome Icon':
+    'prefix': 'fa'
+    'body': """
+    i.fa.fa-$1
+    """
+
+  'Button':
+    'prefix': 'btn'
+    'body': """
+    button.btn.${1:btn-default} type="button"
+      $2
+    """
+
+  'Button Modal':
+    'prefix': 'btn-modal'
+    'body': """
+    button.btn.$1{btn-primary} data-toggle="modal" data-target="#$2"
+      $3
+    """
+
+  'Dropdown':
+    'prefix': 'dropdown'
+    'body': """
+    .dropdown
+      button.btn.dropdown-toggle.sr-only data-toggle="dropdown" id="$1" type="button"
+        $2
+        span.caret
+      ul.dropdown-menu aria-labelledby="$3" role="menu"
+        $4
+    """
+
+  'Menu Item':
+    'prefix': 'menuitem'
+    'body': """
+    li role="presentation"
+      a role="menuitem" tabindex="-1" href="${1:#}"
+        $2
+    """
+
+  'Menu Header':
+    'prefix': 'menuheader'
+    'body': """
+    li.dropdown-header role="presentation"
+      $1
+    """
+
+  'Menu Divider':
+    'prefix': 'menudivider'
+    'body': """
+    li.divider role="presentation"
+    """
+
+  'Button Group':
+    'prefix': 'btn-group'
+    'body': """
+    .btn-group.${1:btn-group-${2:sm}}
+      ${3:btn}
+    """
+
+  'Button Group Vertical':
+    'prefix': 'btn-group-vertical'
+    'body': """
+    .btn-group-vertical.${1:btn-group-${2:sm}}
+      ${3:btn}
+    """
+
+  'Button Toolbar':
+    'prefix': 'btn-toolbar'
+    'body': """
+    .btn-toolbar role="toolbar"
+      ${1:btngroup}
+    """
+
+  'Input Group':
+    'prefix': 'input-group'
+    'body': """
+    .input-group
+      span.input-group-addon $1
+      input.form-control placeholder="$2" type="text" /
+      $3
+    """
+
+  'Tab':
+    'prefix': 'nav-tabs'
+    'body': """
+    ul.nav.nav-tabs
+      $1
+    """
+
+  'Item':
+    'prefix': 'item'
+    'body': """
+    li
+      a.href="${1:#}"
+        $2
+    """
+
+  'Pills':
+    'prefix': 'nav-pills'
+    'body': """
+    ul.nav.nav-pills$1
+      $2
+    """
+
+  'Navbar':
+    'prefix': 'nav-'
+    'body': """
+    nav.navbar class=("navbar-default${1: navbar-fixed-top}") role="navigation"
+      .container
+        $2
+    """
+
+  'Breadcrumbs':
+    'prefix': 'breadcrumb'
+    'body': """
+    ol.breadcrumb
+      $1
+    """
+
+  'Pagination':
+    'prefix': 'pagination'
+    'body': """
+    ul.pagination
+      li
+        a href="#"  &laquo;
+      $1
+      li
+        a href="#"  &raquo;
+    """
+
+  "Pager":
+    'prefix': 'pager'
+    'body': """
+    ul.pager
+      $1
+    """
+
+  'Label':
+    'prefix': 'label-'
+    'body': """
+    span.label.${1:label-default}
+      $2
+    """
+
+  'Badge':
+    'prefix': 'badge'
+    'body': """
+    span.badge$1
+      $2
+    """
+
+  'Jumbotron':
+    'prefix': 'jumbotron'
+    'body': """
+    .jumbotron
+      h1 ${1:Hello, world!}
+      p $2
+    """
+
+  'Page Header':
+    'prefix': 'page-header'
+    'body': """
+    .page-header
+      h1
+        | $1
+        small
+          | $2
+    """
+
+  'Thumbnail':
+    'prefix': 'thumbnail'
+    'body': """
+    a.thumbnail href="#"
+      ${1:img src="" alt="$2"}
+    """
+
+  'Alert':
+    'prefix': 'alert'
+    'body': """
+    .alert.${1:alert-success}
+      $2
+    """
+
+  'Alert Close':
+    'prefix': 'close'
+    'body': """
+    button.close type="button data-dismiss="alert" aria-hidden="true"
+      &times;
+    """
+
+  'Alert Link':
+    'prefix': 'alert-link'
+    'body': """
+    a.alert-link href="${1:#}
+      $2
+    """
+
+  'Progress Bar':
+    'prefix': 'progress-'
+    'body': """
+    .progress
+      .progress-bar aria-valuemax="100" aria-valuemin="0" aria-valuenow="$1" role="progressbar" style=("width: $2%;")
+        span.sr-only $2
+    """
+
+  'List Group':
+    'prefix': 'list-group'
+    'body': """
+    ul.list-group
+      ${1:li.list-group-item}
+        $2
+    """
+
+  'List Group Item':
+    'prefix': 'list-item'
+    'body': """
+    li.list-group-item
+      $1
+    """
+
+  'Panel':
+    'prefix': 'panel'
+    'body': """
+    .panel.panel-default
+      .panel-heading
+        h3.panel-title $1
+      .panel-body
+        $2
+      .panel-footer
+        $3
+    """
+
+  'Well':
+    'prefix': 'well'
+    'body': """
+    .well.${1:well-sm}
+      $2
+    """
+
+  'Blockquote Reverse':
+    'prefix': 'blockquote-reverse'
+    'body': """
+    blockquote.blockquote-reverse$1
+      $2
+    """
+
+  'List Unstyled':
+    'prefix': 'list-unstyled'
+    'body': """
+    ul.list-unstyled
+      li
+        $1
+      $2
+    """
+
+  'List Inline':
+    'prefix': 'list-inline'
+    'body': """
+    ul.list-inline
+      li $1
+      $2
+    """
+
+  'Dl Horizontal':
+    'prefix': 'dl-horizontal'
+    'body': """
+    dl.dl-horizontal
+      ${1:dt $2}
+      dd $3
+    """
+
+  'Table':
+    'prefix': 'table-'
+    'body': """
+    table.table$1
+      $2
+    """
+
+  'Form Group':
+    'prefix': 'form-group'
+    'body': """
+    .form-group
+      label for="$1" $2
+      input.form-control type="${3:text}" id="$4" placeholder="$5" /
+      ${6:p.help-block ${7:Help text here.}}
+    """
